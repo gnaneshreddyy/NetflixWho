@@ -2,6 +2,8 @@
 
 A Netflix-style movie and TV show browser built with React, Tailwind CSS, and TMDb API.
 
+**Live Demo:** [https://adg-round2.vercel.app/](https://adg-round2.vercel.app/)
+
 ## Features
 
 - Netflix-style UI with dark/light theme toggle
