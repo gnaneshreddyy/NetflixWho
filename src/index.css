@@ -1,0 +1,98 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply transition-colors duration-200;
+  }
+  
+  body {
+    @apply bg-white dark:bg-netflix-black text-gray-900 dark:text-white;
+  }
+}
+
+@layer components {
+  .movie-card {
+    @apply relative overflow-hidden rounded-lg bg-white dark:bg-netflix-black shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105;
+  }
+  
+  .movie-card:hover .movie-overlay {
+    @apply opacity-100;
+  }
+  
+  .movie-overlay {
+    @apply absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 transition-opacity duration-300;
+  }
+  
+  .hero-gradient {
+    @apply bg-gradient-to-b from-transparent via-netflix-black/50 to-netflix-black;
+  }
+  
+  .search-input {
+    @apply w-full px-4 py-3 bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg text-white placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-netflix-red focus:border-transparent;
+  }
+  
+  .btn-primary {
+    @apply px-6 py-3 bg-netflix-red text-white font-semibold rounded-lg hover:bg-red-700 transition-colors duration-200 transform hover:scale-105;
+  }
+  
+  .btn-secondary {
+    @apply px-6 py-3 bg-gray-200 dark:bg-white/10 text-gray-800 dark:text-white font-semibold rounded-lg border border-gray-300 dark:border-white/20 hover:bg-gray-300 dark:hover:bg-white/20 transition-all duration-200;
+  }
+  
+  .genre-tag {
+    @apply px-3 py-1 bg-netflix-red/20 text-netflix-red rounded-full text-sm font-medium hover:bg-netflix-red/30 transition-colors duration-200;
+  }
+  
+  .rating-badge {
+    @apply absolute top-2 right-2 px-2 py-1 bg-yellow-500 text-black text-xs font-bold rounded-full;
+  }
+  
+  .bookmark-btn {
+    @apply absolute top-2 left-2 p-2 bg-black/50 rounded-full hover:bg-black/70 transition-colors duration-200;
+  }
+  
+  .loading-spinner {
+    @apply animate-spin rounded-full h-8 w-8 border-b-2 border-netflix-red;
+  }
+
+  /* Line clamp utilities */
+  .line-clamp-1 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+  }
+  
+  .line-clamp-2 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+  }
+  
+  .line-clamp-3 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-gray-100 dark:bg-gray-800;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-netflix-red rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-red-700;
+}
