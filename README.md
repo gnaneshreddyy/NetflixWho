@@ -1,4 +1,4 @@
-# MovieVault
+#NetflixWho
 
 A Netflix-style movie and TV show browser built with React, Tailwind CSS, and TMDb API.
 
