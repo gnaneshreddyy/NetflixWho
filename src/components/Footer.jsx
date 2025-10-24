@@ -5,7 +5,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Project Info */}
           <div className="col-span-1 md:col-span-2">
-            <h3 className="text-2xl font-bold text-netflix-red mb-1">MovieVault </h3>
+            <h3 className="text-2xl font-bold text-netflix-red mb-1">NetflixWho? </h3>
             <p className="text-xs text-yellow-400 mb-1">Netflix who!!!!!</p>
             <p className="text-sm mb-4">
               Hey there! This is my project for ADG Round 2 selection. I built this movie app using React and Tailwind CSS. 

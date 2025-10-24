@@ -21,7 +21,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center space-x-4">
-            <h1 className="text-2xl font-bold text-netflix-red">MovieVault</h1>
+            <h1 className="text-2xl font-bold text-netflix-red">NetflixWho??</h1>
             <div className="flex space-x-2">
               <button
                 onClick={() => handleContentTypeChange('movie')}
